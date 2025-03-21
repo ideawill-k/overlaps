@@ -1,0 +1,262 @@
+/* Overlaps 마케팅 페이지 스타일 */
+:root {
+    --overlaps-blue: #0066cc;
+    --overlaps-teal: #30b4b4;
+    --overlaps-orange: #ff7f50;
+    --overlaps-red: #ff5533;
+    --overlaps-dark-gray: #333333;
+    --overlaps-light-gray: #f8f9fa;
+    --overlaps-white: #ffffff;
+}
+
+/* 전체 페이지 스타일 */
+.overlaps-page {
+    line-height: 1.6;
+    color: var(--overlaps-dark-gray);
+    font-family: 'Pretendard', 'Noto Sans KR', sans-serif;
+}
+
+.overlaps-container {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/* 히어로 섹션 */
+.overlaps-hero {
+    background: linear-gradient(135deg, var(--overlaps-blue) 0%, var(--overlaps-teal) 50%, var(--overlaps-red) 100%);
+    color: var(--overlaps-white);
+    padding: 5rem 0;
+    text-align: center;
+}
+
+.overlaps-hero h1 {
+    font-size: 2.5rem;
+    margin-bottom: 1.5rem;
+    font-weight: 700;
+}
+
+.overlaps-hero p {
+    font-size: 1.2rem;
+    max-width: 800px;
+    margin: 0 auto 2rem;
+}
+
+/* 섹션 공통 스타일 */
+.overlaps-section {
+    padding: 5rem 0;
+}
+
+.overlaps-gray-bg {
+    background-color: var(--overlaps-light-gray);
+}
+
+.overlaps-section-title {
+    text-align: center;
+    margin-bottom: 3rem;
+    position: relative;
+}
+
+.overlaps-section-title h2 {
+    font-size: 2.2rem;
+    font-weight: 700;
+    display: inline-block;
+    margin-bottom: 1rem;
+    position: relative;
+}
+
+.overlaps-section-title h2::after {
+    content: '';
+    position: absolute;
+    bottom: -10px;
+    left: 0;
+    right: 0;
+    height: 4px;
+    width: 60px;
+    margin: 0 auto;
+    background: var(--overlaps-red);
+}
+
+.overlaps-intro-text {
+    text-align: center;
+    max-width: 800px;
+    margin: 0 auto 3rem;
+}
+
+/* 강점 섹션 스타일 */
+.overlaps-features {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 2rem;
+    margin-bottom: 4rem;
+}
+
+.overlaps-feature-item {
+    flex: 1 1 300px;
+    background: var(--overlaps-white);
+    padding: 2rem;
+    border-radius: 8px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.05);
+    transition: transform 0.3s ease;
+}
+
+.overlaps-feature-item:hover {
+    transform: translateY(-5px);
+}
+
+.overlaps-feature-item h3 {
+    color: var(--overlaps-red);
+    margin-bottom: 1rem;
+    font-weight: 600;
+}
+
+.overlaps-icon {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+    color: var(--overlaps-red);
+}
+
+.overlaps-summary-text {
+    text-align: center;
+    font-weight: 600;
+    font-size: 1.2rem;
+    margin-top: 2rem;
+}
+
+.overlaps-highlight {
+    color: var(--overlaps-red);
+}
+
+/* 서비스 카드 스타일 */
+.overlaps-service-cards {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2rem;
+    justify-content: center;
+}
+
+.overlaps-service-card {
+    flex: 1 1 350px;
+    background: var(--overlaps-white);
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.05);
+    transition: all 0.3s ease;
+}
+
+.overlaps-service-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 15px 30px rgba(0,0,0,0.1);
+}
+
+.overlaps-service-header {
+    background: linear-gradient(to right, var(--overlaps-red), var(--overlaps-orange));
+    color: var(--overlaps-white);
+    padding: 1.5rem;
+}
+
+.overlaps-service-header h3 {
+    font-size: 1.5rem;
+    font-weight: 600;
+    margin-bottom: 0.5rem;
+}
+
+.overlaps-service-header p {
+    font-weight: 300;
+}
+
+.overlaps-service-body {
+    padding: 2rem;
+}
+
+.overlaps-service-body ul {
+    list-style-type: none;
+    margin-top: 1rem;
+}
+
+.overlaps-service-body li {
+    margin-bottom: 0.75rem;
+    display: flex;
+    align-items: flex-start;
+}
+
+.overlaps-service-body li::before {
+    content: '•';
+    color: var(--overlaps-red);
+    font-weight: bold;
+    margin-right: 10px;
+}
+
+/* CTA 섹션 스타일 */
+.overlaps-cta {
+    background: linear-gradient(45deg, var(--overlaps-blue), var(--overlaps-teal));
+    color: var(--overlaps-white);
+    text-align: center;
+    padding: 5rem 0;
+}
+
+.overlaps-cta h2 {
+    font-size: 2rem;
+    margin-bottom: 1.5rem;
+    font-weight: 700;
+}
+
+.overlaps-cta-points {
+    margin: 2rem 0;
+}
+
+.overlaps-cta-point {
+    display: inline-block;
+    margin: 0.5rem 1rem;
+    padding: 0.5rem 1rem;
+    background: rgba(255,255,255,0.1);
+    border-radius: 30px;
+}
+
+.overlaps-cta-subtitle {
+    font-size: 1.3rem;
+    font-weight: 600;
+    margin-top: 2rem;
+}
+
+.overlaps-button {
+    display: inline-block;
+    background-color: var(--overlaps-red);
+    color: var(--overlaps-white);
+    padding: 1rem 2.5rem;
+    border-radius: 50px;
+    font-weight: 600;
+    text-decoration: none;
+    transition: all 0.3s ease;
+    margin-top: 1rem;
+    border: none;
+    cursor: pointer;
+    font-size: 1.1rem;
+    box-shadow: 0 4px 10px rgba(255, 85, 51, 0.3);
+}
+
+.overlaps-button:hover {
+    background-color: #e83e1a;
+    transform: translateY(-2px);
+    box-shadow: 0 6px 15px rgba(255, 85, 51, 0.4);
+}
+
+/* 반응형 스타일 */
+@media (max-width: 768px) {
+    .overlaps-hero h1 {
+        font-size: 2rem;
+    }
+    
+    .overlaps-section-title h2 {
+        font-size: 1.8rem;
+    }
+    
+    .overlaps-feature-item, .overlaps-service-card {
+        flex: 1 1 100%;
+    }
+    
+    .overlaps-service-header h3 {
+        font-size: 1.3rem;
+    }
+}

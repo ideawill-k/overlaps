@@ -1,0 +1,303 @@
+/* 디지털마케팅 페이지 전용 스타일 */
+/* 기본 스타일은 style.css에서 로드됨 */
+
+/* 페이지 특화 색상 변수 */
+.page-template-template-digital-marketing {
+    --hero-bg: linear-gradient(135deg, #0074D9 0%, #FF851B 100%);
+    --section-bg-light: #f0f8ff;
+}
+
+/* 히어로 섹션 커스텀 스타일 */
+.page-template-template-digital-marketing .hero {
+    background: var(--hero-bg);
+    padding: 100px 0;
+    text-align: center;
+    color: var(--white);
+    position: relative;
+    overflow: hidden;
+}
+
+.page-template-template-digital-marketing .hero::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: radial-gradient(circle at center, rgba(255,255,255,0.1) 0%, rgba(255,255,255,0) 70%);
+    pointer-events: none;
+}
+
+.page-template-template-digital-marketing .hero h1 {
+    font-size: 2.2rem;
+    max-width: 800px;
+    margin: 0 auto 20px;
+    color: var(--white);
+}
+
+.page-template-template-digital-marketing .hero p {
+    max-width: 700px;
+    margin: 0 auto 30px;
+    font-size: 1.1rem;
+}
+
+/* 섹션 스타일 */
+.page-template-template-digital-marketing .section {
+    padding: 70px 0;
+    position: relative;
+}
+
+.page-template-template-digital-marketing .section-number {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    font-size: 6rem;
+    font-weight: 900;
+    opacity: 0.05;
+    color: var(--text-color);
+    z-index: 1;
+}
+
+.page-template-template-digital-marketing .section-1,
+.page-template-template-digital-marketing .section-3,
+.page-template-template-digital-marketing .section-5 {
+    background-color: var(--section-bg-light);
+}
+
+/* 서비스 카드 특화 스타일 */
+.page-template-template-digital-marketing .service-card {
+    display: flex;
+    flex-direction: column;
+    box-shadow: var(--shadow-md);
+    border-radius: var(--border-radius);
+    overflow: hidden;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    background: var(--white);
+}
+
+.page-template-template-digital-marketing .service-card:hover {
+    transform: translateY(-5px);
+    box-shadow: var(--shadow-lg);
+}
+
+.page-template-template-digital-marketing .card-header {
+    background-color: var(--primary-color);
+    color: var(--white);
+    padding: 15px 20px;
+    border-bottom: 3px solid rgba(255,255,255,0.2);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.page-template-template-digital-marketing .card-header h3 {
+    margin: 0;
+    color: var(--white);
+    font-size: 1.25rem;
+}
+
+.page-template-template-digital-marketing .card-body {
+    flex: 1;
+    padding: 25px;
+}
+
+.page-template-template-digital-marketing .card-body ul {
+    padding-left: 20px;
+    margin-bottom: 0;
+}
+
+.page-template-template-digital-marketing .card-body li {
+    margin-bottom: 10px;
+}
+
+/* 프로세스 & 스텝 스타일 */
+.page-template-template-digital-marketing .process-steps {
+    counter-reset: step-counter;
+    margin-top: 30px;
+}
+
+.page-template-template-digital-marketing .step {
+    margin-bottom: 40px;
+    position: relative;
+    padding-left: 80px;
+}
+
+.page-template-template-digital-marketing .step::before {
+    counter-increment: step-counter;
+    content: "Step " counter(step-counter);
+    position: absolute;
+    left: 0;
+    top: 0;
+    background-color: var(--primary-color);
+    color: white;
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: bold;
+}
+
+.page-template-template-digital-marketing .step h3 {
+    margin-top: 0;
+    color: var(--primary-color);
+}
+
+/* 테스티모니얼 스타일 */
+.page-template-template-digital-marketing .testimonial-box {
+    background-color: var(--white);
+    padding: 20px;
+    margin-bottom: 20px;
+    border-radius: var(--border-radius);
+    box-shadow: var(--shadow-sm);
+}
+
+.page-template-template-digital-marketing .testimonial-text {
+    font-style: italic;
+    margin-bottom: 15px;
+    position: relative;
+    padding: 0 20px;
+}
+
+.page-template-template-digital-marketing .testimonial-text:before,
+.page-template-template-digital-marketing .testimonial-text:after {
+    content: '"';
+    font-size: 40px;
+    color: var(--accent-color);
+    opacity: 0.4;
+    position: absolute;
+}
+
+.page-template-template-digital-marketing .testimonial-text:before {
+    left: 0;
+    top: -10px;
+}
+
+.page-template-template-digital-marketing .testimonial-text:after {
+    right: 0;
+    bottom: -30px;
+}
+
+/* CTA 섹션 특화 스타일 */
+.page-template-template-digital-marketing .cta-section {
+    background: linear-gradient(135deg, var(--primary-color) 0%, var(--accent-color) 100%);
+    color: var(--white);
+    text-align: center;
+    padding: 80px 0;
+    position: relative;
+    overflow: hidden;
+}
+
+.page-template-template-digital-marketing .cta-section::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.1);
+    pointer-events: none;
+}
+
+.page-template-template-digital-marketing .cta-title {
+    font-size: 2.2rem;
+    margin-bottom: 20px;
+    position: relative;
+    color: var(--white);
+}
+
+.page-template-template-digital-marketing .cta-text {
+    max-width: 700px;
+    margin: 0 auto 20px;
+    font-size: 1.2rem;
+    position: relative;
+}
+
+/* 문제점 섹션 특화 스타일 */
+.page-template-template-digital-marketing .concerns-section {
+    background-color: var(--white);
+    padding: 60px 0;
+}
+
+.page-template-template-digital-marketing .question-box {
+    background-color: var(--white);
+    border-left: 4px solid var(--primary-color);
+    padding: 15px 20px;
+    margin-bottom: 30px;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.05);
+}
+
+.page-template-template-digital-marketing .question-box p {
+    font-weight: bold;
+    color: var(--text-color);
+    margin: 0;
+}
+
+/* 콘텐츠 박스 스타일 */
+.page-template-template-digital-marketing .content-box {
+    background-color: var(--white);
+    padding: 30px;
+    border-radius: var(--border-radius);
+    box-shadow: var(--shadow-sm);
+}
+
+/* 애니메이션 효과 */
+.page-template-template-digital-marketing .service-card,
+.page-template-template-digital-marketing .testimonial-box,
+.page-template-template-digital-marketing .step,
+.page-template-template-digital-marketing .content-box {
+    opacity: 0;
+    transform: translateY(20px);
+    transition: opacity 0.5s ease, transform 0.5s ease;
+}
+
+.page-template-template-digital-marketing .service-card.visible,
+.page-template-template-digital-marketing .testimonial-box.visible,
+.page-template-template-digital-marketing .step.visible,
+.page-template-template-digital-marketing .content-box.visible {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+/* 반응형 스타일 */
+@media (max-width: 992px) {
+    .page-template-template-digital-marketing .services-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 768px) {
+    .page-template-template-digital-marketing .services-grid {
+        grid-template-columns: 1fr;
+    }
+    
+    .page-template-template-digital-marketing .step {
+        padding-left: 0;
+        padding-top: 70px;
+        text-align: center;
+    }
+    
+    .page-template-template-digital-marketing .step:before {
+        left: 50%;
+        transform: translateX(-50%);
+    }
+    
+    .page-template-template-digital-marketing .hero h1 {
+        font-size: 1.8rem;
+    }
+    
+    .page-template-template-digital-marketing .cta-title {
+        font-size: 1.8rem;
+    }
+    
+    .page-template-template-digital-marketing .cta-text {
+        font-size: 1rem;
+    }
+    
+    .page-template-template-digital-marketing .section-number {
+        font-size: 4rem;
+        top: 10px;
+        left: 10px;
+    }
+}
